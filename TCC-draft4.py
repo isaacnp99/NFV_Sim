@@ -565,10 +565,227 @@ while loop:
                         #exit(1)
                         loop = 0
                         break
-
+                        
+# Gera um número float aleatório entre 8.0 e 10.0
+high_fixo = random.uniform(8.0, 10.0)
+# Gera um número float aleatório entre 6.0 e 8.0
+medium_fixo = random.uniform(6.0, 8.0)
+# Gera um número float aleatório entre 4.0 e 6.0
+low_fixo = random.uniform(4.0, 6.0)
+def num_high_fixo():
+def num_medium_fixo():
+def num_low_fixo():
+	printf(f"O número alto é {high_fixo}")
+	printf(f"O número médio é {medium_fixo}")
+	printf(f"O número baixo é {low_fixo}")
+    
 for s in slices:
     print(s.name+" "+str(s.subscribers)+" subscribers")
     for key, vnfs in s.vnfs.items():
         for i in vnfs.modules:
             print(vnfs.modules[i].guestname+"\t"+vnfs.modules[i].hostname+"\t"+vnfs.modules[i].datacenter+"\t"+str(vnfs.num_vcpus()))
+# Chamada das VNFs de Vídeo
+if s.subscribers > (s.vnfs["AMF"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["AMF"].modules)
+            flag_affinity = s.vnfs["AMF"].add_module(i,"AMF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["AMF"].add_module_greedy(i,"AMF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
 
+if s.subscribers > (s.vnfs["SMF"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["SMF"].modules)
+            flag_affinity = s.vnfs["SMF"].add_module(i,"SMF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["SMF"].add_module_greedy(i,"SMF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["NSSF"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["NSSF"].modules)
+            flag_affinity = s.vnfs["NSSF"].add_module(i,"NSSF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["NSSF"].add_module_greedy(i,"NSSF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["AUSF"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["AUSF"].modules)
+            flag_affinity = s.vnfs["AUSF"].add_module(i,"AUSF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["AUSF"].add_module_greedy(i,"AUSF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["NEF"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["NEF"].modules)
+            flag_affinity = s.vnfs["NEF"].add_module(i,"NEF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["NEF"].add_module_greedy(i,"NEF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["UDM"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["UDM"].modules)
+            flag_affinity = s.vnfs["UDM"].add_module(i,"UDM")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["UDM"].add_module_greedy(i,"UDM")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["NRF"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["NRF"].modules)
+            flag_affinity = s.vnfs["NRF"].add_module(i,"NRF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["NRF"].add_module_greedy(i,"NRF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["PCF"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["PCF"].modules)
+            flag_affinity = s.vnfs["PCF"].add_module(i,"PCF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["PCF"].add_module_greedy(i,"PCF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["AF"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["AF"].modules)
+            flag_affinity = s.vnfs["AF"].add_module(i,"AF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["AF"].add_module_greedy(i,"AF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["UPF"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["UPF"].modules)
+            flag_UPFfinity = s.vnfs["UPF"].add_module(i,"UPF")
+            if(flag_affinityfinity==0):
+                flag_resources = s.vnfs["UPF"].add_module_greedy(i,"UPF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+					
+                    loop = 0
+                    break
+
+# Chamada para as VNFs de Voz
+if s.subscribers > (s.vnfs["AMF2"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["AMF2"].modules)
+            flag_affinity = s.vnfs["AMF2"].add_module(i,"AMF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["AMF2"].add_module_greedy(i,"AMF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["SMF2"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["SMF2"].modules)
+            flag_affinity = s.vnfs["SMF2"].add_module(i,"SMF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["SMF2"].add_module_greedy(i,"SMF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["NSSF2"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["NSSF2"].modules)
+            flag_affinity = s.vnfs["NSSF2"].add_module(i,"NSSF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["NSSF2"].add_module_greedy(i,"NSSF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["AUSF2"].num_vcpus()/(num_high_fixo*pow(10,-4))):
+            i = len(s.vnfs["AUSF2"].modules)
+            flag_affinity = s.vnfs["AUSF2"].add_module(i,"AUSF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["AUSF2"].add_module_greedy(i,"AUSF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["NRF2"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["NRF2"].modules)
+            flag_affinity = s.vnfs["NRF2"].add_module(i,"NRF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["NRF2"].add_module_greedy(i,"NRF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["UDM2"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["UDM2"].modules)
+            flag_affinity = s.vnfs["UDM2"].add_module(i,"UDM")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["UDM2"].add_module_greedy(i,"UDM")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["UPF2"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["UPF2"].modules)
+            flag_affinity = s.vnfs["UPF2"].add_module(i,"UPF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["UPF2"].add_module_greedy(i,"UPF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+if s.subscribers > (s.vnfs["PCF2"].num_vcpus()/(num_medium_fixo*pow(10,-4))):
+            i = len(s.vnfs["PCF2"].modules)
+            flag_affinity = s.vnfs["PCF2"].add_module(i,"PCF")
+            if(flag_affinity==0):
+                flag_resources = s.vnfs["PCF2"].add_module_greedy(i,"PCF")
+                if(flag_resources==0):
+                    print("your datacenter has no free resources. Add more blades, please")
+
+ 		loop = 0
+                break            
+# O que estou imaginando que tem que ser a saída [Isaac]
+#Valor total que as Blades possuem
+blades = [
+    {B1, 'cpu': 16, 'ram': 128, 'storage': 2},
+    {B2, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B3, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B4, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B5, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B6, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B7, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B8, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B9, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B10, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B11, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B12, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B13, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B14, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B15, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B16, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B17, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B18, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B19, 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B20, 'cpu': 16, 'ram': 128, 'storage': 2},
+]
+#Valor atual que tem disónível nas blades
+#Fazer um lookup das blades
+blades = [
+    {B1', 'cpu': 16, 'ram': 128, 'storage': 2},
+    {B2', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B3', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B4', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B5', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B6', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B7', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B8', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B9', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B10', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B11', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B12', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B13', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B14', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B15', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B16', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B17', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B18', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B19', 'cpu': 16, 'ram': 128, 'storage': 2},
+	{B20', 'cpu': 16, 'ram': 128, 'storage': 2},
+]
+	
+#Printar na tela quantos usuários estão sendo atendidos
+print("Estão sendo atendidos atualmente {user_num_atual}")
+
+#Printar na tela em qual loop estamos para a metodologia de fila que está sendo calculada
+print("Dentro do método Round-Robin estamos atualmente no loop {loop_num}")
