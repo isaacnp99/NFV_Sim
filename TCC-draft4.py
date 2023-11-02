@@ -1,3 +1,4 @@
+#teste
 #Improvements to be done:
 #   In line  print which resources are missing
 import random
